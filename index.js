@@ -1,14 +1,7 @@
 function takeANumber(currentLine, newName) {
-  if (currentLine.length === 0) {  // checks if the line is at 0
-    currentLine.push(newName); //if so adds the person to the line and gives them a number
-    
-    return "Welcome, " + newName + ". " + "You are number " + currentLine.length + " in line."
-  } else {
     currentLine.push(newName);  // is not the adds newest person to line with current number
     
     return "Welcome, " + newName + ". " + "You are number " + currentLine.length + " in line.";
-  }
- 
 }
 
 function nowServing(katzDeliLine) {
@@ -16,14 +9,14 @@ function nowServing(katzDeliLine) {
     var current = katzDeliLine[i]; // each current person while going through
     
     if (katzDeliLine.length > 0) { // if there are people in line
-      katzDeliLine.shift(current); // takes out first person from line
+      katzDeliLine.shift(); // takes out first person from line
       return "Currently serving " + current + ".";
     } 
   }
    if (katzDeliLine.length === 0) { // if no-one is on line
       return "There is nobody waiting to be served!"
     }
-}
+}    // wondering whether or not to make this into one "if" statement or an "if  else" which would be prefered
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) { // if no-one is on line
