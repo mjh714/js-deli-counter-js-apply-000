@@ -30,7 +30,7 @@ function currentLine(katzDeliLine) {
         output += (i + 1) + ". " + katzDeliLine[i] + ", "; // concating the names and number placement 
       
       }
-    output = output.slice(0, -2);  // removes last two characters of string "the ', '" from the string
+    output = output.slice(0, -2);  // removes last two characters of string "the ',' & ' '" from the string
     return "The line is currently: " + output;
   } 
 }
