@@ -1,7 +1,7 @@
-function takeANumber(currentLine, newName) {
-    currentLine.push(newName);  // adds newest person to line with their current number
-    
-    return "Welcome, " + newName + ". " + "You are number " + currentLine.length + " in line.";
+function takeANumber(currentNumber, newName) {
+ currentNumber++;
+   
+    return currentNumber;
 }
 
 function nowServing(katzDeliLine) {
