@@ -16,7 +16,7 @@ function nowServing(katzDeliLine) {
    if (katzDeliLine.length === 0) { // if no-one is on line
       return "There is nobody waiting to be served!"
     }
-}    // wondering whether or not to make this into one "if" statement or an "if  else" which would be prefered
+}    // wondering whether or not to make this into one "if" statement or an "if  else" which would be prefered or even take away the for loop and just take the first element with shift because shift automatically takes the first element
 
 function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) { // if no-one is on line
