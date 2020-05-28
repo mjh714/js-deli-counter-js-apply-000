@@ -1,5 +1,5 @@
 function takeANumber(currentLine, newName) {
-    currentLine.push(newName);  // is not the adds newest person to line with current number
+    currentLine.push(newName);  // adds newest person to line with their current number
     
     return "Welcome, " + newName + ". " + "You are number " + currentLine.length + " in line.";
 }
